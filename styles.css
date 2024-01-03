@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255));
+    margin: 50px;
+}
+
+
+.projeto {
+    text-align: center;
+    font-size: 15px;
+    color: black;
+    margin: 20px auto; /* Auto para centralizar horizontalmente, margin-top para afastamento do topo */
+    display: block; /* Certifique-se de que é exibido como bloco */
+}
+.box {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 60px;
+    border-radius: 60px;
+    max-width: 100%;
+    width: 500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+fieldset {
+    border: 3px solid rgb(254, 255, 254);
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    border: 3px solid rgb(254, 255, 254);
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(to right, rgb(4, 188, 32), rgb(2, 152, 24));
+    border-radius: 7px;
+    font-size: 1.6em;
+    color: white;
+}
+
+.inputBox {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.inputUser {
+    background: none;
+    border: none;
+    border-bottom: 4px solid #28ad5f;
+    outline: none;
+    color: white;
+    font-size: 1.5em;
+    width: 100%;
+    letter-spacing: 3px;
+    padding: 6px 0;
+}
+
+.labelInput {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    pointer-events: none;
+    transition: .3s;
+    color: rgb(255, 255, 255);
+}
+
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput {
+    top: -25px;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+
+#curso {
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    outline: none;
+    font-size: 1.3em;
+    color: rgb(255, 255, 255);
+}
+
+#curso option {
+    color: rgb(0, 0, 0); /* Cor preta */
+}
+
+#submit {
+    background: linear-gradient(to right, rgb(4, 188, 32), rgb(2, 152, 24));
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 1.6em;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+#submit:hover {
+    background: linear-gradient(to right, rgb(230, 76, 5), rgb(248, 55, 52));
+}
+
+#successMessage {
+    display: none;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 25px;
+}
+
